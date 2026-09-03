@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/A2_AlgoritmoGenetico/A2_AlgoritmoGenetico.iml" filepath="$PROJECT_DIR$/A2_AlgoritmoGenetico/A2_AlgoritmoGenetico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/A3_GRASP/A3_GRASP.iml" filepath="$PROJECT_DIR$/A3_GRASP/A3_GRASP.iml" />
       <module fileurl="file://$PROJECT_DIR$/DCC_MetaheuristicasAvanzadas.iml" filepath="$PROJECT_DIR$/DCC_MetaheuristicasAvanzadas.iml" />
     </modules>
   </component>

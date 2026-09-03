@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         rnd = new Random();
         int tam_poblacion = 100;
-        int tam_cromosoma = 1500;
+        int tam_cromosoma = 10;
 
         ArrayList<Individuo> poblacion = new ArrayList<>(); //Lista de soluciones
         //Generacion solución...
@@ -94,8 +94,11 @@ public class Main {
 
             Collections.sort(poblacion);
 
-            poblacion.removeLast();
-            poblacion.removeLast();
+            //poblacion.removeLast();
+            //poblacion.removeLast();
+
+            poblacion.remove(poblacion.size()-1);
+            poblacion.remove(poblacion.size()-1);
 
             // ------
 
@@ -124,8 +127,10 @@ public class Main {
     public static int evaluaFO(int[] solucion){
         int vo = 0;
         for (int i = 0; i < solucion.length; i++) {
-            vo += solucion[i];
+            //vo += solucion[i];
+            vo +=  solucion[i] == 1 ? Math.pow(2, i): 0;
         }
+        vo = vo*vo;
         return vo;
     }
 
@@ -133,6 +138,7 @@ public class Main {
         for (Individuo individuo : pob){ //por cada inviduo
             int[] solucion = individuo.solucion;
             for (int i = 0; i < solucion.length; i++) { //recorre cada gen del individuo
+                //Comentada para experimentacion...
                 System.out.print(solucion[i] + " \t"); //imprime al gen
             }
             System.out.print( " VO : " + individuo.vo +" \t");

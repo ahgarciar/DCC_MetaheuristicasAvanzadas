@@ -7,6 +7,6 @@ public class Individuo implements Comparable<Individuo> {
 
     @Override
     public int compareTo(Individuo o) {
-        return  o.vo - this.vo;
+        return  (o.vo - this.vo);
     }
 }
